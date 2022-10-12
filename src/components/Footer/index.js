@@ -7,19 +7,19 @@ function Footer() {
       <footer>
         <ul>
           <a href="https://github.com/coleyrockin" target="blank">
-            <li>
-              <FaGithub />
-            </li>
+
+            <FaGithub />
+
           </a>
           <a href="https://www.linkedin.com" target="blank">
-            <li>
-              <FaLinkedin />
-            </li>
+
+            <FaLinkedin />
+
           </a>
           <a href="https://www.instagram.com" target="blank">
-            <li>
-              <FaInstagram />
-            </li>
+
+            <FaInstagram />
+
           </a>
         </ul>
       </footer>
