@@ -3,20 +3,20 @@ import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 function Footer() {
   return (
-    <div className="footer-div">
+    <div className="flex justify-center">
       <footer>
-        <ul>
+        <ul className='flex text-lg'>
           <a href="https://github.com/coleyrockin" target="blank">
 
             <FaGithub />
 
           </a>
-          <a href="https://www.linkedin.com" target="blank">
+          <a href="https://www.linkedin.com/https://www.linkedin.com/in/boyd-roberts-b27585239/" target="blank">
 
             <FaLinkedin />
 
           </a>
-          <a href="https://www.instagram.com" target="blank">
+          <a href="https://www.instagram.com/coleyrockin/" target="blank">
 
             <FaInstagram />
 

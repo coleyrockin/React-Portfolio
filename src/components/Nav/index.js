@@ -1,52 +1,25 @@
-import React from 'react';
-import { capitalizeFirstLetter } from '../../utils/helpers';
+import React from "react";
 
-function Nav(props) {
-  const {
-    categories = [],
-    setCurrentCategory,
-    contactSelected,
-    currentCategory,
-    setContactSelected,
-  } = props;
-
+function Navigation({ sections, currentSection, setCurrentSection }) {
   return (
-    <header className="flex-row px-1">
-      <h2>
-        <a data-testid="link" href="/">
-          <span role="img" aria-label="camera"> </span> Boyd Roberts
-        </a>
-      </h2>
-      <nav>
-        <ul className="flex-row">
-          <li className="mx-2">
-            <a data-testid="about" href="#about" onClick={() => setContactSelected(false)}>
-              About Boyd
-            </a>
-          </li>
-          <li className={`mx-2 ${contactSelected && 'navActive'}`}>
-            <span onClick={() => setContactSelected(true)}>Contact me</span>
-          </li>
-          {categories.map((category) => (
-            <li
-              className={`mx-1 ${currentCategory.name === category.name && !contactSelected && 'navActive'
+    <nav className="text-2xl">B O Y D
+      <nav className="flex sm:justify-center space-x-4">
+        {
+          sections.map(({ name, comp }) => (
+            <div
+              className={`p-1 ${name === currentSection.name && "text-amber-400"
                 }`}
-              key={category.name}
+              key={name}
+              onClick={() => setCurrentSection({ name, comp })}
             >
-              <span
-                onClick={() => {
-                  setCurrentCategory(category);
-                  setContactSelected(false);
-                }}
-              >
-                {capitalizeFirstLetter(category.name)}
-              </span>
-            </li>
-          ))}
-        </ul>
-      </nav>
-    </header>
+              {name}
+            </div>
+          ))
+        }
+      </nav >
+    </nav>
+
   );
 }
 
-export default Nav;
+export default Navigation;

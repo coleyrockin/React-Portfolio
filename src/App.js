@@ -3,43 +3,34 @@ import Nav from './components/Nav';
 import About from './components/About';
 import Contact from './components/Contact';
 import Footer from './components/Footer'
+import Portfolio from './components/Portfolio';
+import Resume from "./components/Resume";
 
 function App() {
-  const [categories] = useState([
-    {
-      name: 'Portfolio',
-      description: '',
-    },
-    { name: 'Resume', description: '' },
+  const sections = [
+    { name: "About", comp: About },
+    { name: "Portfolio", comp: Portfolio },
+    { name: "Contact", comp: Contact },
+    { name: "Resume", comp: Resume }
+  ];
 
-  ]);
-
-  const [currentCategory, setCurrentCategory] = useState(categories[0]);
-
-  const [contactSelected, setContactSelected] = useState(false);
-
+  const [currentSection, setCurrentSection] = useState(sections[0]);
   return (
-    <div>
+    <div class="flex-row">
       <Nav
-        categories={categories}
-        setCurrentCategory={setCurrentCategory}
-        currentCategory={currentCategory}
-        contactSelected={contactSelected}
-        setContactSelected={setContactSelected}
-      ></Nav>
-      <main>
-        {!contactSelected ? (
-          <>
-
-            <About></About>
-          </>
-        ) : (
-          <Contact></Contact>
-        )}
+        sections={sections}
+        currentSection={currentSection}
+        setCurrentSection={setCurrentSection}
+      />
+      <main className="">
+        <section className="p-4">
+          {React.createElement(currentSection.comp, {})}
+        </section>
       </main>
-      <footer><Footer></Footer></footer>
+      <Footer />
     </div>
   );
 }
+
 
 export default App;
