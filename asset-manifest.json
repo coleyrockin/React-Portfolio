@@ -1,21 +1,22 @@
 {
   "files": {
     "main.css": "/coleyrockin/react-portfolio/static/css/main.92905335.css",
-    "main.js": "/coleyrockin/react-portfolio/static/js/main.f8dfecce.js",
+    "main.js": "/coleyrockin/react-portfolio/static/js/main.ac99979c.js",
     "static/js/787.a2cb61a6.chunk.js": "/coleyrockin/react-portfolio/static/js/787.a2cb61a6.chunk.js",
     "static/media/OhSnap.png": "/coleyrockin/react-portfolio/static/media/OhSnap.e50169d128a4b5f42a34.png",
     "static/media/NURTI.png": "/coleyrockin/react-portfolio/static/media/NURTI.586fb60c498c47590768.png",
+    "static/media/Weather.png": "/coleyrockin/react-portfolio/static/media/Weather.13e67756abfdeed80c32.png",
     "static/media/ContactC.png": "/coleyrockin/react-portfolio/static/media/ContactC.31157608b784d5511c2c.png",
     "static/media/MVC.png": "/coleyrockin/react-portfolio/static/media/MVC.2307bc567e2d600aed45.png",
     "static/media/MeBGrm.png": "/coleyrockin/react-portfolio/static/media/MeBGrm.0afe5425be6b405bafd8.png",
     "static/media/JATE.png": "/coleyrockin/react-portfolio/static/media/JATE.30fcfafebfbfa5ee036d.png",
     "index.html": "/coleyrockin/react-portfolio/index.html",
     "main.92905335.css.map": "/coleyrockin/react-portfolio/static/css/main.92905335.css.map",
-    "main.f8dfecce.js.map": "/coleyrockin/react-portfolio/static/js/main.f8dfecce.js.map",
+    "main.ac99979c.js.map": "/coleyrockin/react-portfolio/static/js/main.ac99979c.js.map",
     "787.a2cb61a6.chunk.js.map": "/coleyrockin/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.92905335.css",
-    "static/js/main.f8dfecce.js"
+    "static/js/main.ac99979c.js"
   ]
 }
