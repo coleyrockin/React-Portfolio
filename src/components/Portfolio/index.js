@@ -4,7 +4,7 @@ import JATE from "../../assets/images/JATE.png"
 import NURTI from "../../assets/images/NURTI.png"
 import OhSnap from "../../assets/images/OhSnap.png"
 import ContactC from "../../assets/images/ContactC.png"
-
+import Weather from "../../assets/images/Weather.png"
 
 function Project({ data }) {
   const { name, description, photo, link } = data;
@@ -66,11 +66,11 @@ function Portfolio() {
       link: "https://dry-beyond-26861.herokuapp.com/",
     },
     {
-      name: "Nutri Wizzard",
+      name: "Weather Dashboarc",
       description:
-        "First collaborative project using two API's, one is no longer active for prices (Red Circle - Target), and Edamam for nutritional facts.",
-      photo: NURTI,
-      link: "https://coleyrockin.github.io/Runrob/",
+        "A weather dashboard with form inputs, Search for a city for current and future conditions for that city and that city is added to the search history.",
+      photo: Weather,
+      link: "https://coleyrockin.github.io/Weather-Dashboard/",
     },
   ];
   return (
