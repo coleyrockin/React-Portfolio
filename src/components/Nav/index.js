@@ -1,10 +1,17 @@
 import React from "react";
 
+
 function Navigation({ sections, currentSection, setCurrentSection }) {
   return (
-    <nav className=" m-3 text-2xl"> B O Y D
 
-      <nav className="flex sm:justify-center space-x-4">
+    <nav>
+      <h3 class="ml9">
+        <span className="m-4">
+          <span class="letters">B O Y D</span>
+        </span>
+      </h3>
+
+      <nav className="text-3xl bold flex sm:justify-center space-x-4">
         {
           sections.map(({ name, comp }) => (
             <div
@@ -17,6 +24,7 @@ function Navigation({ sections, currentSection, setCurrentSection }) {
             </div>
           ))
         }
+
       </nav >
     </nav>
 

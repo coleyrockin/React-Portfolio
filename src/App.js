@@ -6,6 +6,7 @@ import Footer from './components/Footer'
 import Portfolio from './components/Portfolio';
 import Resume from "./components/Resume";
 
+
 function App() {
   const sections = [
     { name: "About", comp: About },
@@ -27,8 +28,10 @@ function App() {
           {React.createElement(currentSection.comp, {})}
         </section>
       </main>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
       <Footer />
     </div>
+
   );
 }
 
