@@ -2,7 +2,7 @@ import React from "react";
 
 function Navigation({ sections, currentSection, setCurrentSection }) {
   return (
-    <nav className="text-2xl">B O Y D
+    <nav className=" m-3 text-2xl"> B O Y D
 
       <nav className="flex sm:justify-center space-x-4">
         {

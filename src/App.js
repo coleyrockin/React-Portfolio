@@ -22,8 +22,8 @@ function App() {
         currentSection={currentSection}
         setCurrentSection={setCurrentSection}
       />
-      <main className="">
-        <section className="p-4">
+      <main className="flex display-inline">
+        <section className="p-4 ">
           {React.createElement(currentSection.comp, {})}
         </section>
       </main>

@@ -18,3 +18,8 @@ code {
     monospace;
 
 }
+
+p,
+.abouttext {
+  display: inline;
+}

@@ -4,7 +4,7 @@ function Resume() {
   return (
     <div className="">
       <article className="p-2 m-2">
-        <h2 className="">Resume</h2>
+        <h2 className="underline">Resume</h2>
         <a
           className=""
           href="/resume.txt"
@@ -15,8 +15,8 @@ function Resume() {
         </a>
       </article>
       <article className="">
-        <h2 className="">Proficiencies</h2>
-        <ul className="">
+        <h2 className="text-lg underline">Web Development Knowledge</h2>
+        <ul className="p-3 m-3">
           <li>HTML</li>
           <li>CSS</li>
           <li>Javascript</li>
