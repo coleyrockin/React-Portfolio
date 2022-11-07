@@ -23,7 +23,7 @@ function App() {
         currentSection={currentSection}
         setCurrentSection={setCurrentSection}
       />
-      <main className="flex display-inline">
+      <main className="flex justify-center">
         <section className="p-4 ">
           {React.createElement(currentSection.comp, {})}
         </section>

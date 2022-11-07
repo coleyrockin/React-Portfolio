@@ -4,7 +4,7 @@ import JATE from "../../assets/images/JATE.png"
 import NURTI from "../../assets/images/NURTI.png"
 import OhSnap from "../../assets/images/OhSnap.png"
 import ContactC from "../../assets/images/ContactC.png"
-import Weather from "../../assets/images/Weather.png"
+import Crustulum from "../../assets/images/CrustPasteHP1.png"
 
 function Project({ data }) {
   const { name, description, photo, link } = data;
@@ -66,11 +66,11 @@ function Portfolio() {
       link: "https://dry-beyond-26861.herokuapp.com/",
     },
     {
-      name: "Weather Dashboarc",
+      name: "Crustulum Bucket",
       description:
-        "A weather dashboard with form inputs, Search for a city for current and future conditions for that city and that city is added to the search history.",
-      photo: Weather,
-      link: "https://coleyrockin.github.io/Weather-Dashboard/",
+        "Pastebin Project made with other developers in my bootcamp.",
+      photo: Crustulum,
+      link: "https://crustulum-bucket.herokuapp.com/",
     },
   ];
   return (

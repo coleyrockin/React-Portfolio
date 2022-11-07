@@ -37,10 +37,11 @@ function Contact() {
   };
 
   return (
-    <section>
-      <h1 data-testid="h1tag">Contact Me</h1>
-      <form id="contact-form" onSubmit={handleSubmit}>
-        <div>
+    <section className='flex'>
+
+      <form className='flex-col' id="contact-form" onSubmit={handleSubmit}>
+        <div class="">
+          <h1 data-testid="h1tag" className="m-3">Contact Me</h1>
           <label htmlFor="name">Name:</label><br />
           <input type="text" name="name" defaultValue={name} onBlur={handleChange} />
         </div>
