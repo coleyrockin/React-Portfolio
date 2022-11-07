@@ -11,7 +11,7 @@ function Navigation({ sections, currentSection, setCurrentSection }) {
         </span>
       </h3>
 
-      <nav className="text-3xl bold flex sm:justify-center space-x-4">
+      <nav className="text-2xl bold flex justify-center space-x-4">
         {
           sections.map(({ name, comp }) => (
             <div
