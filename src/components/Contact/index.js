@@ -1,67 +1,73 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
-import { validateEmail } from '../../utils/helpers';
+const FORM_ENDPOINT = "";
 
-function Contact() {
-  const [formState, setFormState] = useState({ name: '', email: '', message: '' });
-
-  const [errorMessage, setErrorMessage] = useState('');
-  const { name, email, message } = formState;
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (!errorMessage) {
-      console.log('Submit Form', formState);
-    }
+const ContactForm = () => {
+  const [submitted, setSubmitted] = useState(false);
+  const handleSubmit = () => {
+    setTimeout(() => {
+      setSubmitted(true);
+    }, 100);
   };
-
-  const handleChange = (e) => {
-    if (e.target.name === 'email') {
-      const isValid = validateEmail(e.target.value);
-      if (!isValid) {
-        setErrorMessage('Your email is invalid.');
-      } else {
-        setErrorMessage('');
-      }
-    } else {
-      if (!e.target.value.length) {
-        setErrorMessage(`${e.target.name} is required.`);
-      } else {
-        setErrorMessage('');
-      }
-    }
-    if (!errorMessage) {
-      setFormState({ ...formState, [e.target.name]: e.target.value });
-      console.log('Handle Form', formState);
-    }
-  };
-
+  if (submitted) {
+    return (
+      <>
+        <div className="text-2xl">Thank you!</div>
+        <div className="text-md">We'll be in touch soon.</div>
+      </>
+    );
+  }
   return (
-    <section className='flex'>
-
-      <form className='flex-col' id="contact-form" onSubmit={handleSubmit}>
-        <div class="">
-          <h1 data-testid="h1tag" className="text-center text-xl m-2">Contact Me</h1>
-          <label htmlFor="name">Name:</label><br />
-          <input type="text" name="name" defaultValue={name} onBlur={handleChange} />
+    <div
+      className="h-screen flex flex-col 
+      items-center justify-center"
+    >
+      <div className="mb-3 pt-0">
+        <h3 className="text-center text-gray-400 text-s">Contact Us</h3>
+      </div>
+      <form
+        className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
+        action={FORM_ENDPOINT}
+        onSubmit={handleSubmit}
+        method="POST"
+        target="_blank"
+      >
+        <div className="mb-3 pt-0">
+          <input
+            type="text"
+            placeholder="Your name"
+            name="name"
+            className="px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
+            required
+          />
         </div>
-        <div>
-          <label htmlFor="email">Email address:</label><br />
-          <input type="email" name="email" defaultValue={email} onBlur={handleChange} />
+        <div className="mb-3 pt-0">
+          <input
+            type="email"
+            placeholder="Email"
+            name="email"
+            className="px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
+            required
+          />
         </div>
-        <div>
-          <label htmlFor="message">Message:</label><br />
-          <textarea name="message" rows="5" defaultValue={message} onBlur={handleChange} />
+        <div className="mb-3 pt-0">
+          <textarea
+            placeholder="Your message"
+            name="message"
+            className="px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
+            required
+          />
         </div>
-        {errorMessage && (
-          <div>
-            <p className="error-text">{errorMessage}</p>
-          </div>
-        )}
-        <button data-testid="button" type="submit">Submit</button>
+        <div className="mb-3 pt-0">
+          <button
+            className="bg-blue-500 text-white active:bg-blue-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+            type="submit"
+          >
+            Send a message
+          </button>
+        </div>
       </form>
-    </section>
+    </div>
   );
-}
-
-export default Contact;
+};
+export default ContactForm;
