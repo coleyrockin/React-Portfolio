@@ -41,7 +41,7 @@ function Contact() {
 
       <form className='flex-col' id="contact-form" onSubmit={handleSubmit}>
         <div class="">
-          <h1 data-testid="h1tag" className="text-center text-xl m-2 ">Contact Me</h1>
+          <h1 data-testid="h1tag" className="text-center text-xl m-2">Contact Me</h1>
           <label htmlFor="name">Name:</label><br />
           <input type="text" name="name" defaultValue={name} onBlur={handleChange} />
         </div>

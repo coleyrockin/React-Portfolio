@@ -1,36 +1,28 @@
 import React from "react";
-
+import { FaHtml5, FaCss3Alt, FaJsSquare, FaBootstrap } from "react-icons/fa";
+import { Mongodb, Mysql, ReactJs, Bulma, Tailwindcss, Nodedotjs } from "@icons-pack/react-simple-icons";
 function Resume() {
   return (
-    <div className="">
-      <article className="p-2 m-2">
-        <h2 className="underline">Resume</h2>
-        <a
-          className=""
-          href="/resume.txt"
-          target="_blank"
-          download
-        >
-          Download my resume, or Find me on Linkedin (Link in Footer).
-        </a>
-      </article>
-      <article className="">
-        <h2 className="text-lg underline">Web Development Knowledge</h2>
-        <ul className="p-3 m-3">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>Javascript</li>
-          <li>MongoDB, Mongoose</li>
-          <li>MySQL, Sequlize</li>
-          <li>React</li>
-          <li>Bootstrap</li>
-          <li>APIs</li>
-          <li>Node.Js</li>
-          <li>Responsive design</li>
-          <li>Express</li>
-        </ul>
-      </article>
-    </div>
+    <article className="">
+      <h2 className="text-lg underline">Web Development Knowledge</h2>
+      <ul className="p-3 m-3">
+        <li className="flex items-center">HTML<FaHtml5 /></li>
+        <li className="flex items-center">CSS<FaCss3Alt /></li>
+        <li className="flex items-center">Javascript ES6<FaJsSquare /></li>
+        <li className="flex items-center">MongoDB<Mongodb size={18} /></li>
+        <li className="flex items-center">MySQL<Mysql size={22} /></li>
+        <li className="flex items-center">React<ReactJs size={18} color="#61DAFB" /></li>
+        <li className="flex items-center">Bootstrap<FaBootstrap /> | BULMA <Bulma size={18} /> | Tailwind <Tailwindcss size={18} />  </li>
+        <li className="flex items-center">Node.Js < Nodedotjs size={18} /> & various packages</li>
+        <li className="flex items-center">Responsive design</li>
+        <li className="flex items-center">Express</li>
+        <li className="flex items-center">Git</li>
+        <li className="flex items-center">Database Theory</li>
+
+
+      </ul>
+      <h2>In progress of learning AWS, JAVA, C#, and Python</h2>
+    </article >
   );
 }
 
