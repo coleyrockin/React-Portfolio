@@ -81,15 +81,15 @@ function Contact() {
             <textarea id="message"
               type="text"
               name="message"
-              class="block p-2 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:text-md focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               onChange={handleChange()}
               placeholder="Sweet messages only"
+              required
             >
-
             </textarea>
           </div>
           <div>
-            <button type="submit" input="message" className="items-center text-xl m-2">Send</button>
+            <button class="formbutton" type="submit" input="message" className="align-center text-xl">Send</button>
           </div>
           {formStatus && <p>Message sent, Good day!</p>}
         </form>
