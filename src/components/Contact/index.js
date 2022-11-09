@@ -1,73 +1,86 @@
-import React, { useState } from "react";
+// import "./styles.css";
+import axios from "axios";
+import { useState } from "react";
 
-const FORM_ENDPOINT = "";
+function Contact() {
+  const [formStatus, setFormStatus] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [query, setQuery] = useState({
+    name: "",
+    email: "",
+    message: ""
+  });
 
-const ContactForm = () => {
-  const [submitted, setSubmitted] = useState(false);
-  const handleSubmit = () => {
-    setTimeout(() => {
-      setSubmitted(true);
-    }, 100);
+  const handleChange = () => (e) => {
+    const name = e.target.name;
+    const value = e.target.value;
+    setQuery((prevState) => ({
+      ...prevState,
+      [name]: value
+    }));
   };
-  if (submitted) {
-    return (
-      <>
-        <div className="text-2xl">Thank you!</div>
-        <div className="text-md">We'll be in touch soon.</div>
-      </>
-    );
-  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (loading) return;
+    setLoading(true);
+    const formData = new FormData();
+    Object.entries(query).forEach(([key, value]) => {
+      formData.append(key, value);
+    });
+
+    axios
+      .post(
+        "https://getform.io/f/a52040d1-8d60-403e-b0b4-2e087c95c65c",
+        formData,
+        { headers: { Accept: "application/json" } }
+      )
+      .then(function (response) {
+        setFormStatus(true);
+        setQuery({
+          name: "",
+          email: ""
+        });
+        setLoading(false);
+      })
+      .catch(function (error) {
+        console.log(error);
+        setLoading(false);
+      });
+  };
   return (
-    <div
-      className="h-screen flex flex-col 
-      items-center justify-center"
-    >
-      <div className="mb-3 pt-0">
-        <h3 className="text-center text-gray-400 text-s">Contact Us</h3>
+    <div className="Contact">
+      <div class="form">
+        <h1 className="text-center text-xl m-2">Contact Me</h1>
+        <form enctype="multipart/form-data" onSubmit={handleSubmit}>
+          <div class="form-group">
+            <input
+              type="text"
+              name="name"
+              placeholder="Full name"
+              value={query.name}
+              onChange={handleChange()}
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              value={query.email}
+              onChange={handleChange()}
+            />
+          </div>
+          <div class="form-group">
+            <input type="text" name="message" rows="5" placeholder="Message" onChange={handleChange()} />
+          </div>
+          <div>
+            <button type="submit" className="items-center text-xl m-2">Send</button>
+          </div>
+          {formStatus && <p>Message sent.</p>}
+        </form>
       </div>
-      <form
-        className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
-        action={FORM_ENDPOINT}
-        onSubmit={handleSubmit}
-        method="POST"
-        target="_blank"
-      >
-        <div className="mb-3 pt-0">
-          <input
-            type="text"
-            placeholder="Your name"
-            name="name"
-            className="px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
-            required
-          />
-        </div>
-        <div className="mb-3 pt-0">
-          <input
-            type="email"
-            placeholder="Email"
-            name="email"
-            className="px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
-            required
-          />
-        </div>
-        <div className="mb-3 pt-0">
-          <textarea
-            placeholder="Your message"
-            name="message"
-            className="px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
-            required
-          />
-        </div>
-        <div className="mb-3 pt-0">
-          <button
-            className="bg-blue-500 text-white active:bg-blue-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-            type="submit"
-          >
-            Send a message
-          </button>
-        </div>
-      </form>
     </div>
   );
-};
-export default ContactForm;
+}
+export default Contact

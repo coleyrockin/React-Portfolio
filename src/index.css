@@ -11,13 +11,22 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: black;
   color: aliceblue;
+  line-height: 1.7;
+}
+
+.form-group {
+  margin-top: 15px;
+}
+
+.form {
+  max-width: 320px;
+  margin: 32px auto;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
 
 p,
 .abouttext {

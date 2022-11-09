@@ -4,14 +4,13 @@ import About from './components/About';
 import Footer from './components/Footer'
 import Portfolio from './components/Portfolio';
 import Resume from "./components/Resume";
-import ContactForm from './components/Contact';
-
+import Contact from './components/Contact';
 
 function App() {
   const sections = [
     { name: "About", comp: About },
     { name: "Portfolio", comp: Portfolio },
-    { name: "Contact", comp: ContactForm },
+    { name: "Contact", comp: Contact },
     { name: "Resume", comp: Resume }
 
   ];
