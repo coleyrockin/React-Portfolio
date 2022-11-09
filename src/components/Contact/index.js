@@ -1,7 +1,7 @@
 // import "./styles.css";
 import axios from "axios";
 import { useState } from "react";
-
+//JS
 function Contact() {
   const [formStatus, setFormStatus] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -39,7 +39,8 @@ function Contact() {
         setFormStatus(true);
         setQuery({
           name: "",
-          email: ""
+          email: "",
+          message: ""
         });
         setLoading(false);
       })
@@ -48,6 +49,7 @@ function Contact() {
         setLoading(false);
       });
   };
+  //HTML FOR CONTACT
   return (
     <div className="Contact">
       <div class="form">
@@ -55,29 +57,41 @@ function Contact() {
         <form enctype="multipart/form-data" onSubmit={handleSubmit}>
           <div class="form-group">
             <input
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               type="text"
               name="name"
               placeholder="Full name"
               value={query.name}
               onChange={handleChange()}
+              required
             />
           </div>
           <div class="form-group">
             <input
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               type="email"
               name="email"
               placeholder="Email"
               value={query.email}
               onChange={handleChange()}
+              required
             />
           </div>
           <div class="form-group">
-            <input type="text" name="message" rows="5" placeholder="Message" onChange={handleChange()} />
+            <textarea id="message"
+              type="text"
+              name="message"
+              class="block p-2 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:text-md focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              onChange={handleChange()}
+              placeholder="Sweet messages only"
+            >
+
+            </textarea>
           </div>
           <div>
-            <button type="submit" className="items-center text-xl m-2">Send</button>
+            <button type="submit" input="message" className="items-center text-xl m-2">Send</button>
           </div>
-          {formStatus && <p>Message sent.</p>}
+          {formStatus && <p>Message sent, Good day!</p>}
         </form>
       </div>
     </div>
