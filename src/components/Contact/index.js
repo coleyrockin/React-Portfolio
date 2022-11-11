@@ -88,13 +88,13 @@ function Contact() {
             >
             </textarea>
           </div>
-          <div>
-            <button class="formbutton" type="submit" input="message" className="align-center text-xl">Send</button>
+          <div className="m-3 flex justify-center">
+            <button className="bg-gray-700 text-white font-medium py-2 px-4 rounded-full animate-bounce" type="submit" input="message"> Send  </button>
           </div>
           {formStatus && <p>Message sent, Good day!</p>}
         </form>
-      </div>
-    </div>
+      </div >
+    </div >
   );
 }
 export default Contact
