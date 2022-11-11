@@ -11,13 +11,13 @@ function App() {
     { name: "About", comp: About },
     { name: "Portfolio", comp: Portfolio },
     { name: "Contact", comp: Contact },
-    { name: "Resume", comp: Resume }
+    { name: "Knowledge", comp: Resume }
 
   ];
 
   const [currentSection, setCurrentSection] = useState(sections[0]);
   return (
-    <div class="flex-row p-1">
+    <div class="flex-row">
       <Nav
         sections={sections}
         currentSection={currentSection}

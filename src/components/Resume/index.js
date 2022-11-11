@@ -6,8 +6,8 @@ import { DiResponsive } from "react-icons/di";
 function Resume() {
   return (
     <article className="">
-      <h2 className="text-lg underline">Web Development Knowledge</h2>
-      <ul className="p-3 m-3 whitespace-pre">
+      <h2 className="flex justify-center text-xl underline">Web Development Knowledge</h2>
+      <ul className="p-3 m-3 whitespace-pre flex flex-col justify-center items-center">
         <li className="flex items-center">HTML <FaHtml5 size={16} /></li>
         <li className="flex items-center">CSS <FaCss3Alt size={16} /></li>
         <li className="flex items-center">Javascript ES6 <FaJsSquare size={16} /></li>
@@ -20,10 +20,8 @@ function Resume() {
         <li className="flex items-center">Git < Git size={16} /></li>
         <li className="flex items-center">Database Theory <FaDatabase size={14} /></li>
         <li className="flex items-center">Responsive Design <DiResponsive size={20} /></li>
-
-
       </ul>
-      <h2>In progress of learning AWS, JAVA, C#, and Python</h2>
+      <h2>In process of learning AWS, JAVA, C#, and Python</h2>
     </article >
   );
 }
