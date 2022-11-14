@@ -24,7 +24,7 @@ function App() {
         setCurrentSection={setCurrentSection}
       />
       <main className="flex justify-center">
-        <section className="p-2 m-2">
+        <section className="p-1 m-1">
           {React.createElement(currentSection.comp, {})}
         </section>
       </main>
