@@ -5,7 +5,7 @@ function Footer() {
   return (
     <div className="flex justify-center m-12">
       <footer>
-        <ul className='flex text-2xl'>
+        <ul className='flex text-2xl space-x-1'>
           <a className='hover:text-3xl' href="https://github.com/coleyrockin" target="blank">
 
             <FaGithub />
