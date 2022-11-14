@@ -3,6 +3,7 @@ import axios from "axios";
 import { useState } from "react";
 
 //JS
+
 function Contact() {
   const [formStatus, setFormStatus] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -90,8 +91,11 @@ function Contact() {
             </textarea>
           </div>
           <div className="m-3 flex justify-center">
+            {/* <input type="hidden" id="captchaResponse" name="g-recaptcha-response"></input> */}
             <button className="bg-gray-700 text-white font-medium py-2 px-4 rounded-full animate-bounce" type="submit" input="message"> Send  </button>
           </div>
+
+
           {formStatus && <p>Message sent, Good day!</p>}
         </form>
       </div >
