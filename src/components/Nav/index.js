@@ -11,7 +11,7 @@ function Navigation({ sections, currentSection, setCurrentSection }) {
         </span>
       </h3>
 
-      <nav className="text-2xl bold flex align-center justify-evenly">
+      <nav className="text-2xl font-bold flex align-center justify-evenly">
         {
           sections.map(({ name, comp }) => (
             <div
