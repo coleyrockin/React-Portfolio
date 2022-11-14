@@ -6,7 +6,7 @@ import { DiResponsive } from "react-icons/di";
 function Resume() {
   return (
     <article className="">
-      <h2 className="flex justify-center text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-violet-300 via-sky-300 to-violet-500">Web Development Knowledge</h2>
+      <h2 className="flex justify-center text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 via-sky-300 to-violet-500">Web Development Knowledge</h2>
       <ul className="p-2 m-2 whitespace-pre flex flex-col items-end flex-wrap content-center">
         <li className="flex items-center">HTML <FaHtml5 size={16} /></li>
         <li className="flex items-center">CSS <FaCss3Alt size={16} /></li>

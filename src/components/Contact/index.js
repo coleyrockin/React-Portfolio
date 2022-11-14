@@ -55,7 +55,7 @@ function Contact() {
   return (
     <div className="Contact">
       <div class="form">
-        <h1 className="flex justify-center text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-violet-300 via-sky-300 to-violet-500">Contact Me</h1>
+        <h1 className="flex justify-center text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 via-sky-300 to-violet-500">Contact Me</h1>
         <form class="w-12/12" enctype="multipart/form-data" onSubmit={handleSubmit}>
           <div class="form-group">
             <input

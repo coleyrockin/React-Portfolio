@@ -15,8 +15,7 @@ function Navigation({ sections, currentSection, setCurrentSection }) {
         {
           sections.map(({ name, comp }) => (
             <div
-              className={`p-1 ${name === currentSection.name && "text-sky-500"
-                }`}
+              className={`p-1 ${name === currentSection.name && "text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 via-sky-400 to-blue-400"}`}
               key={name}
               onClick={() => setCurrentSection({ name, comp })}
             >
