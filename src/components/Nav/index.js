@@ -6,12 +6,12 @@ function Navigation({ sections, currentSection, setCurrentSection }) {
 
     <nav>
       <h3 class="ml9">
-        <span className="m-4">
+        <span className="m-4 	">
           <span class="letters">B O Y D</span>
         </span>
       </h3>
 
-      <nav className="text-2xl font-bold flex align-center justify-evenly">
+      <nav className="text-xl font-bold flex align-center justify-evenly">
         {
           sections.map(({ name, comp }) => (
             <div

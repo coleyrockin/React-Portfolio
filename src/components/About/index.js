@@ -5,8 +5,8 @@ function About() {
   return (
     <section class="about" className="flex flex-row">
 
-      <img className="center" height={200} width={175} src={ImgMe} alt="Boyd" />
-      <p className="p-2">Recently earned a certificate in Full Stack Web Development from the SMU Coding Boot Camp. Aspire to learn more languages, expand knowledge, and become a software engineer in the future.</p>
+      <img className="center object-contain" height={160} width={160} src={ImgMe} alt="Boyd" />
+      <p className="p-2">Full Stack Web Developer that earned a certificate from Southern Methodist University Coding Boot Camp. Specializing in the MERN stack, and aspiring to learn more computer languages, expand my knowledge, and become a Software Engineer.</p>
     </section >
   );
 }

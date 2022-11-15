@@ -47,7 +47,7 @@ function Portfolio() {
     {
       name: "Nutri Wizzard",
       description:
-        "First collaborative project using two API's, one is no longer active for prices (Red Circle - Target), and Edamam for nutritional facts.",
+        "First collaborative project using two API's, one API is no longer active for prices (Red Circle - Target), and Edamam for nutritional facts.",
       photo: NURTI,
       link: "https://coleyrockin.github.io/Runrob/",
     },
@@ -68,7 +68,7 @@ function Portfolio() {
     {
       name: "Crustulum Bucket",
       description:
-        "Pastebin Project made with other developers in my bootcamp.",
+        "Pastebin was a collaborative Project using MERN stack made with three other developers in my Bootcamp.",
       photo: Crustulum,
       link: "https://crustulum-bucket.herokuapp.com/",
     },
