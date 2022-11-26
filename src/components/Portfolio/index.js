@@ -56,7 +56,7 @@ function Portfolio() {
       description:
         "Single-page application called Oh Snap! that uses React state, props, Hooks, and reusable UI components.",
       photo: OhSnap,
-      link: "https://coleyrockin.github.io/Runrob/",
+      link: "https://coleyrockin.github.io/photo-port/",
     },
     {
       name: "Contact Cards",
