@@ -54,7 +54,7 @@ function Portfolio() {
     {
       name: "Oh Snap",
       description:
-        "Single-page application called Oh Snap! that uses React state, props, Hooks, and reusable UI components to provide a simple yet sleek platform for showing off those photography skills.",
+        "Single-page application called Oh Snap! that uses React state, props, Hooks, and reusable UI components.",
       photo: OhSnap,
       link: "https://coleyrockin.github.io/Runrob/",
     },
@@ -68,7 +68,7 @@ function Portfolio() {
     {
       name: "Crustulum Bucket",
       description:
-        "Pastebin was a collaborative Project using MERN stack made with three other developers in my Bootcamp.",
+        "Crustulum Bucket is a pastebin site that was a collaborative project using MERN stack made with three other developers.",
       photo: Crustulum,
       link: "https://crustulum-bucket.herokuapp.com/",
     },
