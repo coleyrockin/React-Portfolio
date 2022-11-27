@@ -1,6 +1,6 @@
 # React app person portfolio
 
-This project was built using react and is my personal portfolio website.
+This project is my personal portfolio website which was built using react, and tailwind.
 
 ## Available Scripts
 
