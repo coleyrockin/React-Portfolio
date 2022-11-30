@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 function Footer() {
   return (
@@ -16,11 +16,12 @@ function Footer() {
             <FaLinkedin />
 
           </a>
-          <a className='hover:text-3xl' href="https://www.instagram.com/coleyrockin/" target="blank">
+          <a className='hover:text-3xl' href="mailto:boydcroberts@gmail.com" target="blank">
 
-            <FaInstagram />
+            <FaEnvelope />
 
           </a>
+
         </ul>
       </footer>
     </div>
