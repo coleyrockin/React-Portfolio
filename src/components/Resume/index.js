@@ -22,7 +22,13 @@ function Resume() {
         <li className="flex items-center">Responsive Design <DiResponsive size={20} /></li>
       </ul>
       <h2 className="flex justify-center font-bold italic text-md">In process of getting AWS Certified while learning JAVA, C#, and Python.</h2>
+      <div className="m-3 flex justify-center">
+        <a href="https://docs.google.com/document/d/1PMWpUy5Rh3q00oodTrawYEZBw4pIaU-hsEvyHXJepx0/edit?usp=sharing" target="_blank" rel="noreferrer">
+          <button className="bg-gradient-to-r from-violet-400 via-pink-400 to-sky-400 text-white font-medium py-2 rounded-full w-32 animate-pulse ">Resume Link</button>
+        </a>
+      </div>
     </article >
+
   );
 }
 
