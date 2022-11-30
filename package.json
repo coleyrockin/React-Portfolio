@@ -2,7 +2,7 @@
   "name": "react-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://www.boydcroberts.org/",
+  "homepage": "https://coleyrockin.github.io/react-portfolio/",
   "dependencies": {
     "@icons-pack/react-simple-icons": "^5.11.0",
     "@testing-library/jest-dom": "^5.16.5",
