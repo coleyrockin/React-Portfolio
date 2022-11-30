@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/coleyrockin/react-portfolio/static/css/main.6ea41725.css",
-    "main.js": "/coleyrockin/react-portfolio/static/js/main.512a7890.js",
+    "main.css": "/coleyrockin/react-portfolio/static/css/main.9b92f52f.css",
+    "main.js": "/coleyrockin/react-portfolio/static/js/main.64ee3a50.js",
     "static/js/787.a2cb61a6.chunk.js": "/coleyrockin/react-portfolio/static/js/787.a2cb61a6.chunk.js",
     "static/media/OhSnap.png": "/coleyrockin/react-portfolio/static/media/OhSnap.e50169d128a4b5f42a34.png",
     "static/media/NURTI.png": "/coleyrockin/react-portfolio/static/media/NURTI.586fb60c498c47590768.png",
@@ -11,12 +11,12 @@
     "static/media/MeBGrm.png": "/coleyrockin/react-portfolio/static/media/MeBGrm.0afe5425be6b405bafd8.png",
     "static/media/JATE.png": "/coleyrockin/react-portfolio/static/media/JATE.30fcfafebfbfa5ee036d.png",
     "index.html": "/coleyrockin/react-portfolio/index.html",
-    "main.6ea41725.css.map": "/coleyrockin/react-portfolio/static/css/main.6ea41725.css.map",
-    "main.512a7890.js.map": "/coleyrockin/react-portfolio/static/js/main.512a7890.js.map",
+    "main.9b92f52f.css.map": "/coleyrockin/react-portfolio/static/css/main.9b92f52f.css.map",
+    "main.64ee3a50.js.map": "/coleyrockin/react-portfolio/static/js/main.64ee3a50.js.map",
     "787.a2cb61a6.chunk.js.map": "/coleyrockin/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6ea41725.css",
-    "static/js/main.512a7890.js"
+    "static/css/main.9b92f52f.css",
+    "static/js/main.64ee3a50.js"
   ]
 }
