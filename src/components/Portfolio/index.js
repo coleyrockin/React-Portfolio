@@ -25,7 +25,7 @@ function Project({ data }) {
       </h2>
       <p className="p-1 m-1">{description}</p>
       <a href={link2}>
-        <button href={link2} target="" rel="">github</button>
+        <button className="bg-gray-700 text-white font-medium py-2 px-4 rounded-full">Github Repo</button>
       </a>
     </a>
 
