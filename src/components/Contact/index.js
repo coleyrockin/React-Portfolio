@@ -94,8 +94,9 @@ function Contact() {
             {/* <input type="hidden" id="captchaResponse" name="g-recaptcha-response"></input> */}
             <button className="bg-gray-700 text-white font-medium py-2 px-4 rounded-full animate-bounce" type="submit" input="message"> Send  </button>
           </div>
-
-          {formStatus && <p>Message sent, Good day!</p>}
+          <p className="flex justify-center">
+            {formStatus && <p>Message sent, Good day!</p>}
+          </p>
         </form>
       </div >
     </div >
