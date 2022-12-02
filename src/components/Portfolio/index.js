@@ -39,8 +39,8 @@ function Portfolio() {
       description:
         "Blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developers posts as well.",
       photo: MVCTechBlog,
-      link: "https://github.com/coleyrockin/MVCTechBlog",
-      link2: "https://www.google.com",
+      link: "https://mvctechblog12.herokuapp.com/",
+      link2: "https://github.com/coleyrockin/MVCTechBlog",
     },
     {
       name: "JATE",
@@ -48,6 +48,7 @@ function Portfolio() {
         "A text editor that runs in the browser. The app will be a single-page application that meets the PWA criteria.",
       photo: JATE,
       link: "https://pwaalldaytexteditor.herokuapp.com/",
+      link2: "https://github.com/coleyrockin/Progressive-Web-Applications"
     },
     {
       name: "Nutri Wizzard",
@@ -55,6 +56,7 @@ function Portfolio() {
         "First collaborative project using two API's, one API is no longer active for prices (Red Circle - Target), and Edamam for nutritional facts.",
       photo: NURTI,
       link: "https://coleyrockin.github.io/Runrob/",
+      link2: "https://github.com/coleyrockin/Runrob"
     },
     {
       name: "Oh Snap",
@@ -62,6 +64,7 @@ function Portfolio() {
         "Single-page application called Oh Snap! that uses React state, props, Hooks, and reusable UI components.",
       photo: OhSnap,
       link: "https://coleyrockin.github.io/photo-port/",
+      link2: "https://github.com/coleyrockin/photo-port"
     },
     {
       name: "Contact Cards",
@@ -69,6 +72,7 @@ function Portfolio() {
         "MVP of a Contact Cards app and turn it into a Progressive Web Application (PWA).",
       photo: ContactC,
       link: "https://dry-beyond-26861.herokuapp.com/",
+      link2: "https://github.com/coleyrockin/Contact-card"
     },
     {
       name: "Crustulum Bucket",
@@ -76,6 +80,7 @@ function Portfolio() {
         "Crustulum Bucket is a pastebin site that was a collaborative project using MERN stack made with three other developers.",
       photo: Crustulum,
       link: "https://crustulum-bucket.herokuapp.com/",
+      link2: "https://github.com/coleyrockin/Crustulum-Bucket-2.0"
     },
   ];
   return (
