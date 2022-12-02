@@ -7,7 +7,7 @@ import ContactC from "../../assets/images/ContactC.png"
 import Crustulum from "../../assets/images/CrustPasteHP1.png"
 
 function Project({ data }) {
-  const { name, description, photo, link } = data;
+  const { name, description, photo, link, link2 } = data;
   return (
     <a
       href={link}
@@ -24,7 +24,11 @@ function Project({ data }) {
         {name}
       </h2>
       <p className="p-1 m-1">{description}</p>
+      <a href={link2}>
+        <button href={link2} target="" rel="">github</button>
+      </a>
     </a>
+
   );
 }
 
@@ -36,6 +40,7 @@ function Portfolio() {
         "Blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developers posts as well.",
       photo: MVCTechBlog,
       link: "https://github.com/coleyrockin/MVCTechBlog",
+      link2: "https://www.google.com",
     },
     {
       name: "JATE",
