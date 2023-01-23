@@ -1,6 +1,5 @@
-# React app person portfolio
-
-This project is my personal portfolio website which was built using React, Tailwind, and various Node packages.
+# ReactJs Personal App
+Personal portfolio website I built using React, Tailwind, and various Node packages.
 
 ## Available Scripts
 
@@ -16,7 +15,7 @@ You may also see any lint errors in the console.
 
 ### Deployment Link
 
-[Click here for deployment link](https://coleyrockin.github.io/react-portfolio/)
+[Deployment on GitHub Pages](https://coleyrockin.github.io/react-portfolio/)
 
 ### Screenshot
 ![img](./src/assets/images/PortfolioIMG.png)
