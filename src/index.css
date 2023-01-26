@@ -12,6 +12,7 @@ body {
   background-color: black;
   color: aliceblue;
   line-height: 1.7;
+
 }
 
 .form {
@@ -52,4 +53,12 @@ p,
   transform-origin: 50% 100%;
   display: inline-block;
   line-height: 1em;
+}
+
+.badge-name {
+  color: #ffffff;
+  display: block;
+  font-size: 1rem;
+  line-height: 1.1em;
+  margin: 0 8px 8px;
 }

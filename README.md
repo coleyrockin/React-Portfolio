@@ -15,7 +15,7 @@ You may also see any lint errors in the console.
 
 ### Deployment Link
 
-[Deployment on GitHub Pages](https://coleyrockin.github.io/react-portfolio/)
+[GitHub Pages](https://coleyrockin.github.io/react-portfolio/)
 
 ### Screenshot
 ![img](./src/assets/images/PortfolioIMG.png)

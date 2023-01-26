@@ -1,5 +1,6 @@
 import React from 'react';
 import ImgMe from "../../assets/images/MeBGrm.png"
+import Fullstack from "../../assets/images/fullstack.png"
 
 function About() {
   return (
@@ -9,10 +10,12 @@ function About() {
         <p className="p-2 indent-8 font-medium">Full Stack Web Developer with a background in recovery, customer service, and a strong passion for computer science and business. Earned a certificate from Southern Methodist University in Dallas, Texas. Specialize in the MERN stack (MongoDB, ExpressJs, ReactJs, NodeJs) however, beyond motivated to expand my knowledge and continue this vast journey as a Software Engineer.</p>
 
         <div>
-          <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="8329e5c9-3399-4e92-906a-78eb4548a282" data-share-badge-host="https://www.credly.com">
-          </div>
+          <a href="https://www.credly.com/badges/8329e5c9-3399-4e92-906a-78eb4548a282/public_url" target='blank'>
+            <img src={Fullstack} alt='fullstack' />
+          </a>
         </div>
-      </div >
+      </div>
+
     </section >
 
 

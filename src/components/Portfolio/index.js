@@ -11,7 +11,7 @@ function Project({ data }) {
   return (
     <a
       href={link}
-      target=""
+      target="blank"
       rel=""
       className="flex flex-col justify-center items-center"
     >
