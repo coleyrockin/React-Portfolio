@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.68d93ed2.css",
-    "main.js": "/react-portfolio/static/js/main.e841a8ca.js",
+    "main.css": "/react-portfolio/static/css/main.5716e252.css",
+    "main.js": "/react-portfolio/static/js/main.8c8cd492.js",
     "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
     "static/media/OhSnap.png": "/react-portfolio/static/media/OhSnap.e50169d128a4b5f42a34.png",
     "static/media/NURTI.png": "/react-portfolio/static/media/NURTI.586fb60c498c47590768.png",
@@ -10,13 +10,14 @@
     "static/media/CrustPasteHP1.png": "/react-portfolio/static/media/CrustPasteHP1.c2264f5388ef3459e75a.png",
     "static/media/MeBGrm.png": "/react-portfolio/static/media/MeBGrm.0afe5425be6b405bafd8.png",
     "static/media/JATE.png": "/react-portfolio/static/media/JATE.30fcfafebfbfa5ee036d.png",
+    "static/media/fullstack.png": "/react-portfolio/static/media/fullstack.e43eef3995ae63c912c4.png",
     "index.html": "/react-portfolio/index.html",
-    "main.68d93ed2.css.map": "/react-portfolio/static/css/main.68d93ed2.css.map",
-    "main.e841a8ca.js.map": "/react-portfolio/static/js/main.e841a8ca.js.map",
+    "main.5716e252.css.map": "/react-portfolio/static/css/main.5716e252.css.map",
+    "main.8c8cd492.js.map": "/react-portfolio/static/js/main.8c8cd492.js.map",
     "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.68d93ed2.css",
-    "static/js/main.e841a8ca.js"
+    "static/css/main.5716e252.css",
+    "static/js/main.8c8cd492.js"
   ]
 }
